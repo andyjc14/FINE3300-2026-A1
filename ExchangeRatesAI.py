@@ -67,7 +67,7 @@ try:
 
     result = exchange.convert(amount, from_currency, to_currency)
 
-    print(f"{amount:.2f} {from_currency} = {result:.2f} {to_currency}")
+    print(f"${amount:.2f} {from_currency} = ${result:.2f} {to_currency}")
 
 except ValueError as error:
     print("Error:", error)

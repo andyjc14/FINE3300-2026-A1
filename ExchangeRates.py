@@ -34,8 +34,8 @@ to_currency = input("Convert to (choose USD or CAD): ").upper()
 
 result = rates.convert(amount, from_currency, to_currency)
 # format amount and result to strings for output, rounded to 2 decimal places
-amount_text = str(round(amount, 2))
-result_text = str(round(result, 2))
+amount_text = format(amount, ",.2f")
+result_text = format(result, ",.2f")
 
 print("$" + amount_text, from_currency, "is equal to $" + result_text, to_currency + ".")
                 
